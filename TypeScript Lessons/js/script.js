@@ -30,3 +30,8 @@ a = 13;
 console.log(a);
 a = "Mountain";
 console.log(a);
+const myFunc = (r) => {
+    return (Math.PI * r * r).toFixed(2);
+};
+const circleArea = myFunc(25);
+console.log(circleArea);
