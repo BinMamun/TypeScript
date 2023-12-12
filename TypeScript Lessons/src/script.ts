@@ -82,3 +82,38 @@ circle = (r) => {
 }
 
 console.log(circle(20));
+
+
+//class
+
+class player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
+
+  play() {
+    return `${this.name} is ${this.age} years old, and playing for ${this.country}.`;
+  }
+}
+
+const salah = new player("Mohammad Salah", 32, "Egypt");
+const robert = new player("Robert ", 22, "US");
+
+console.log(salah.play());
+console.log(robert.play());
+
+const players: player[] = [];
+
+players.push(salah);
+players.push(robert);
+
+console.log(players);
+
+console.log(players[0]);
+console.log(players[1]);

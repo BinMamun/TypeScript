@@ -49,3 +49,24 @@ circle = (r) => {
     return `Area: ${(Math.PI * r * r).toFixed(2)}\nCircumference: ${(2 * Math.PI * r).toFixed(2)}`;
 };
 console.log(circle(20));
+//class
+class player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        return `${this.name} is ${this.age} years old, and playing for ${this.country}.`;
+    }
+}
+const salah = new player("Mohammad Salah", 32, "Egypt");
+const robert = new player("Robert ", 22, "US");
+console.log(salah.play());
+console.log(robert.play());
+const players = [];
+players.push(salah);
+players.push(robert);
+console.log(players);
+console.log(players[0]);
+console.log(players[1]);
