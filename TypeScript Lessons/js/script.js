@@ -43,3 +43,4 @@ function greetings(user) {
     return `Hello ${user.age > 50 ? "Sir!" : "Mr." + user.name}`;
 }
 console.log(greetings({ name: "Mark", age: 49 }));
+/;
