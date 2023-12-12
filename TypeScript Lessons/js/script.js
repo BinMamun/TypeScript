@@ -35,3 +35,11 @@ const myFunc = (r) => {
 };
 const circleArea = myFunc(25);
 console.log(circleArea);
+function userInfo(id, user) {
+    console.log(`Your Id: ${id}, Name: ${user.name}, Age: ${user.age}`);
+}
+userInfo(542, { name: "Perker", age: 28 });
+function greetings(user) {
+    return `Hello ${user.age > 50 ? "Sir!" : "Mr." + user.name}`;
+}
+console.log(greetings({ name: "Mark", age: 49 }));
