@@ -73,4 +73,12 @@ function greetings(user: userType) {
 
 console.log(greetings({ name: "Mark", age: 49 }));
 
-/
+// Signature
+
+let circle: (r: number) => string
+
+circle = (r) => {
+  return `Area: ${(Math.PI * r * r).toFixed(2)}\nCircumference: ${(2 * Math.PI * r).toFixed(2)}`
+}
+
+console.log(circle(20));

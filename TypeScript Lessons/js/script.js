@@ -43,4 +43,9 @@ function greetings(user) {
     return `Hello ${user.age > 50 ? "Sir!" : "Mr." + user.name}`;
 }
 console.log(greetings({ name: "Mark", age: 49 }));
-/;
+// Signature
+let circle;
+circle = (r) => {
+    return `Area: ${(Math.PI * r * r).toFixed(2)}\nCircumference: ${(2 * Math.PI * r).toFixed(2)}`;
+};
+console.log(circle(20));
