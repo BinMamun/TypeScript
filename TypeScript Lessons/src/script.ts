@@ -6,12 +6,12 @@ const add = ()=>{
 }
 add();
 
-function multiply(){
+function addtion(){
   const num1 = 10, num2 = 15;
-  return num1 * num2;
+  return num1 + num2;
 }
 
-console.log(multiply());
+console.log(`10 + 15 = ${addtion()}`);
 
 
 let playerName:string = "Asif Mahmud";
@@ -38,3 +38,12 @@ const person = {
 }
 
 console.log(person);
+
+
+let a :any; //Dynamic type. We should not use it in typescript.
+
+a = 13 ;
+console.log(a);
+
+a = "Mountain";
+console.log(a);
