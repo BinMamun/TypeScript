@@ -1,7 +1,7 @@
-
+import { isPlayer } from "../interfaces/isPlayer.js";
 //Player class
 
-export class player {
+export class player implements isPlayer {
   name: string;
   age: number;
   country: string;

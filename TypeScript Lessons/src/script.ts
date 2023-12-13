@@ -116,3 +116,5 @@ console.log(mahmud.empInfo());
 mahmud.name = "Ahsan";
 console.log(mahmud);
 console.log(mahmud.empInfo());
+
+//interface
