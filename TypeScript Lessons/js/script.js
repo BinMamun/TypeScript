@@ -1,4 +1,5 @@
-"use strict";
+import { player } from "./classes/player.js";
+import { employee } from "./classes/employee.js";
 console.log("Hello World!");
 const add = () => {
     const num1 = 25, num2 = 35;
@@ -50,16 +51,6 @@ circle = (r) => {
 };
 console.log(circle(20));
 //class
-class player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        return `${this.name} is ${this.age} years old, and playing for ${this.country}.`;
-    }
-}
 const salah = new player("Mohammad Salah", 32, "Egypt");
 const robert = new player("Robert ", 22, "US");
 console.log(salah.play());
@@ -71,20 +62,9 @@ console.log(players);
 console.log(players[0]);
 console.log(players[1]);
 //access modifier
-class employee {
-    constructor(name, age, country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
-    empInfo() {
-        return `Name: ${this.name}, Age: ${this.age}, Country ${this.country}`;
-    }
-}
 const mahmud = new employee("Mahmud Hasan", 30, "Bangladesh");
 console.log(mahmud);
 console.log(mahmud.empInfo());
 mahmud.name = "Ahsan";
-mahmud.country = "England";
 console.log(mahmud);
 console.log(mahmud.empInfo());
