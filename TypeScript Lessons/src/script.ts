@@ -117,4 +117,37 @@ mahmud.name = "Ahsan";
 console.log(mahmud);
 console.log(mahmud.empInfo());
 
-//interface
+//Generics
+
+const addId = <T extends object>
+  (obj: T) => {
+  let id = Math.floor(Math.random() * 100);
+  return { ...obj, id };
+}
+
+let user = addId({
+  name: "Azan",
+  age: 33
+});
+
+console.log(user.id);
+console.log(user.name);
+console.log(user.age);
+
+
+
+
+const calculateAge = <T extends {
+  name: string;
+  dob: string
+}>
+  (obj: T) => {
+  let age = Date.parse(obj.dob);
+  return age;
+}
+
+let userAge = calculateAge({
+  name: "Azan",
+  dob: "2023-11-30"
+});
+console.log(userAge);
