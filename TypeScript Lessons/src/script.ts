@@ -117,3 +117,29 @@ console.log(players);
 
 console.log(players[0]);
 console.log(players[1]);
+
+
+//access modifier
+
+class employee {
+
+
+  constructor(
+    public name: string,
+    private age: number,
+    readonly country: string) { }
+
+  empInfo() {
+    return `Name: ${this.name}, Age: ${this.age}, Country ${this.country}`;
+  }
+}
+
+const mahmud = new employee("Mahmud Hasan", 30, "Bangladesh");
+
+console.log(mahmud);
+console.log(mahmud.empInfo());
+
+mahmud.name = "Ahsan";
+mahmud.country = "England";
+console.log(mahmud);
+console.log(mahmud.empInfo());

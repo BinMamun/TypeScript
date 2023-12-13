@@ -70,3 +70,21 @@ players.push(robert);
 console.log(players);
 console.log(players[0]);
 console.log(players[1]);
+//access modifier
+class employee {
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
+    empInfo() {
+        return `Name: ${this.name}, Age: ${this.age}, Country ${this.country}`;
+    }
+}
+const mahmud = new employee("Mahmud Hasan", 30, "Bangladesh");
+console.log(mahmud);
+console.log(mahmud.empInfo());
+mahmud.name = "Ahsan";
+mahmud.country = "England";
+console.log(mahmud);
+console.log(mahmud.empInfo());
